@@ -18,7 +18,7 @@ namespace Eris1
         public DiscordSocketClient _client;
         private CommandHandler _commands;
         private EventHandler _events;
-        private const string Token = "NzE5MzU5NzMxMjUyMTk5NDg1.Xt5K2Q.kOABiWuCkRiPXfC4dauzWgl4SPk";
+        private const string Token = TOKEN;
         public async Task StartAsync()
         {
             SetConsoleCtrlHandler(handler, true);
