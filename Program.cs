@@ -43,6 +43,8 @@ namespace Eris1
             await _commands.InstallAsync(_client);
             await Task.Delay(5000); // Wait for the bot to connect
             // Do anything that should be done once the bot is connected to all guilds
+            var channel = _client.GetChannel(725125115066449962) as IGuildChannel;
+            channel.SendMessageAsync("Connected to all guilds and starting");
             await Task.Delay(-1); // Prevent the console from closing
         }
 
